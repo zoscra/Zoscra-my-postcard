@@ -1,0 +1,93 @@
+body {
+	background: black;
+}
+.postcard {
+	background: white;
+	width: 400px;
+	height: 300px;
+	margin: 0;
+}
+.postcard-header {
+	display: flex;
+}
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+.postcard-header h1 {
+	margin: 0;
+	width: 500px;
+}
+.postcard-body {
+	display: flex;
+}
+.body-left p:first-child {
+	margin-top: 0;
+}
+.body-left,
+.body-right {
+	padding: 7px;
+}
+input {
+	border: none;
+	border-bottom: 5px;
+	border-color: grey;
+}
+.label_inputs {
+	margin: 0;
+	font-size: medium;
+	color: rgb(176, 176, 176);
+}
+.postcard-footer {
+	text-align: center;
+}
+button {
+	background-color: rgba(8, 8, 8, 0.851);
+	padding: 6px;
+	font-family: "Big Shoulders Inline", sans-serif;
+	color: rgba(13, 158, 186, 0.866);
+}
+button:hover {
+	background-color: rgba(81, 81, 81, 0.851);
+	padding: 6px;
+	font-family: "Big Shoulders Inline", sans-serif;
+	color: rgba(13, 186, 33, 0.866);
+}
+.input-contain1,
+.input-contain2,
+.input-contain3 {
+	position: relative;
+	margin: 20px 0;
+}
+label {
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	color: gray;
+	transition: 0.2s;
+	pointer-events: none;
+}
+input {
+	padding: 10px;
+	border: 1px solid grey;
+	width: 100%;
+	box-sizing: border-box;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) + label {
+	font-size: 12px;
+	transform: translateY(-20px);
+	color: blue;
+}
+.input-contain1 input:focus + label,
+.input-contain1 input:not(:placeholder-shown) + label {
+	display: none;
+}
+.input-contain2 input:focus + label,
+.input-contain2 input:not(:placeholder-shown) + label {
+	display: none;
+}
+.input-contain3 input:focus + label,
+.input-contain3 input:not(:placeholder-shown) + label {
+	display: none;
+}
